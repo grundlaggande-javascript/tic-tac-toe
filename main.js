@@ -75,7 +75,7 @@ function clearBoard() {
 function createBoard() {
     for (let i = 0; i < 9; i++) {
         const cellElement = document.createElement('div');
-        cellElement.classList.add('cell');
+        cellElement.className = "cell";
         cellElement.addEventListener('click', (event) => handleClick(event, i));
         boardElement.appendChild(cellElement);
     }
